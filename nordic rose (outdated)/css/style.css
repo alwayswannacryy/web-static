@@ -1,0 +1,529 @@
+@font-face {
+    font-family: "Hariet Text";
+    src: url(/tests/blog/fonts/HARRIETTEXTREGULAR.OTF);
+}
+
+@font-face {
+    font-family: "Basis";
+    src: url(/tests/blog/fonts/BasisGrotesquePro-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    padding-top: 59px;
+    padding-bottom: 40px;
+    padding-left: 63px;
+    padding-right: 63px;
+}
+
+header .menu {
+    display: inline-block;
+    font-family: 'Hariet Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+header .menu_title {
+    display: inline-block;
+    margin-right: 476px;
+}
+
+header .menu_about {
+    display: inline-block;
+    margin-right: 34px;
+}
+
+header .menu_blog {
+    display: inline-block;
+    margin-right: 31px;
+}
+
+header .menu_links {
+    display: inline-block;
+    margin-right: 36px;
+}
+
+header .menu_projects {
+    display: inline-block;
+}
+
+header a {
+    text-decoration: none;
+    color:#000000; 
+    background: #FFFFFF; 
+    padding: 2px; 
+    transition: 0.5s linear; 
+}
+
+header a:hover {
+    color:#FFFFFF; 
+    background:#000000; 
+}
+
+.preview {
+    border-top: 0.5px solid #BEBEBE;
+    padding-left: 291px;
+    padding-right: 291px;
+}
+
+.preview .main_title {
+    font-family: 'New York Extra Large';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #000000;
+}
+
+.preview .preview_desc {
+    font-family: 'Basis';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 170%; 
+    text-align: center;
+    color: #000000;
+    margin-bottom: 52px;
+}
+
+.preview_img {
+    display: block;
+    margin: 0 auto;
+    width: 100%; /*css-1. можно ли установить размер, чтобы он подстраивался под размер экрана и сама картинка бы не искажалась при этом? то есть, встал так, чтобы по ширине он был на весь экран, а высота подстроилась бы под ширину. последствие моего способа можно пронаблюдать при масштабировании страницы: первое изображение изменяет размер, исходя из размеров страницы, а остальные элементы имеют фиксированные размеры, потому остаются такими же.*/
+}
+
+
+.points { /*тот самый костыль из html-1*/
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+.updates .devider {
+    width: 710px;
+    height: 0px;
+    border: 2px solid #000000;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.updater_img {
+    margin-top: 24px;
+    margin-right: 16px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.updater {
+    margin-top: 29px;
+    margin-right: 237px;
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Basis';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.update_header .links_wrapper {
+    display: inline-block;
+    margin-top: 30px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    width: 140px;
+    height: 44px;
+    padding: 12px 25px;
+    box-sizing: border-box;
+}
+
+.update_header .links_wrapper .update_link_fac {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.update_header .links_wrapper .update_link_twi {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.update_desc {
+    margin-top: 8px;
+    font-family: 'Basis';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: none;
+}
+
+.update_header {
+    margin-bottom: 58px;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+.update_point { 
+    font-family: 'Hariet_Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 170% 
+}
+
+.update_title {
+    display: block;
+    font-family: 'Basis';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 160%;
+    margin-top: 57px;
+    margin-bottom: 24px;
+}
+
+.update_info .update_img {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.update_help_desc {
+    text-align: center;
+    font-family: 'Basis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 52px;
+}
+
+.update_mark {
+    list-style-image: url(/tests/blog/icons/Rectangle\ 34.png)
+} 
+
+.update_list {
+    font-family: 'Hariet Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 170%;
+    margin-bottom: 52px;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 40px
+}
+
+.points .links_wrapper {
+    display: inline-block;
+    margin-top: 30px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    width: 640px;
+    height: 64px;
+    padding: 19px 70px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.points .links_wrapper .update_link_fac {
+    display: inline-block;
+    margin-right: 80px;
+    vertical-align: middle;
+}
+
+.points .links_wrapper .update_link_twi {
+    display: inline-block;
+    margin-left: 80px;
+    vertical-align: middle;
+}
+
+.links_text { /*css-2. я очень долго сидел с этой частью, но так и не смог поставить разделитель между ссылками, как и не смог разместить текст с иконкой идеально по вертикали. */
+    margin: 0;
+    display: inline-block;
+    font-family: 'Basis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    margin-left: 16px;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.update_navigation {
+    margin-top: 32px;
+    font-family: 'Basis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #0C0C0C;
+}
+
+.update_devider {
+    border: 1px dashed #000000;
+    margin-top: 34px;
+    margin-bottom: 32px;
+}
+
+.author_img {
+    float: left;
+    margin-right: 24px;
+}
+
+.author_desc {
+    font-family: 'Hariet Text';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 160%;
+    display: inline;
+}
+
+.author_desc span {
+    font-family: 'Basis';
+    font-style: normal;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.bottom_menu {
+    margin-top: 130px;
+}
+
+.bottom_devider {
+    width: 100%;
+    height: 0px;
+    border: 2px solid #000000;
+    position: relative;
+}
+
+.bottom_eyes { /*css-3. можно ли еще как-то разместить один div поверх другого?*/
+    position: absolute;
+    display: block;
+    left: 47%;
+    bottom: -30px;
+}
+
+.bottom_title {
+    font-family: 'Hariet Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53px;
+    text-align: center;
+    color: #000000;
+    margin: 73px 0 27px 0;
+}
+
+.blogs {
+    padding: 0px 230px 0px 230px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.blog {
+    margin-right: 28px;
+    margin-bottom: 34px;
+}
+
+.blog a {
+    text-decoration: none;
+}
+
+.blog_descr {
+    font-family: 'Basis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+    color: #000000;
+    width: 304px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 2px; 
+    transition: 0.5s linear; 
+}
+
+.blog:hover {
+    text-shadow: #000000 1px 0 0px;
+}
+
+.news_menu {
+    box-sizing: border-box;
+    width: 640px;
+    height: 313px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-top: 12px solid  #000000;
+    margin: 100px auto 0 auto;
+}
+
+.news_title {
+    margin-top: 59px 98px 0px 98px;
+    font-family: 'New York Extra Large';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 28px;
+    text-align: center;
+    margin: 62px 98px 0px 98px;
+}
+
+.news_desc {
+    margin-top: 18px 51px 0px 51px;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin: 18px 51px 36px 51px;
+}
+
+.email_search {
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: 'Basis';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 15px 0px 15px 15px;
+    width: 381px;
+    height: 54px;
+}
+.button_sign {
+    font-family: 'Basis';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 139px;
+    height: 54px;
+    background: #000000;
+    padding: 15px 20px 15px 20px;
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.news_menu button {
+    color: #FFFFFF; 
+    background: #000000; 
+    padding: 2px; 
+    transition: 0.5s linear; 
+}
+
+.news_menu button:hover {
+    color: #000000;
+    background: #FFFFFF;
+}
+
+footer {
+    position: relative;
+    margin-top: 111px;
+    background-color: #000000;
+    padding-top: 18px;
+    padding-bottom: 32px;
+}
+
+.footer_scroll {
+    position: absolute;
+    display: inline-block;
+    font-family: 'Basis';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #000000;
+    left: -50px;
+}
+
+.footer_scroll span {
+    margin-right: 19px;
+}
+
+.footer_scroll .puff {
+    font-family: 'Basis';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer_title {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.footer_desc {
+    font-family: 'New York Small';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    width: 488px;
+    margin: 25px auto 32px auto;
+}
+
+.footer_wrapper {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.footer_links {
+    font-family: 'Basis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 170%;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+.footer_copyright {
+    width: 178px;
+    font-family: 'Basis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    margin: 0 auto;
+    text-align: center;
+    color: #FFFFFF;
+}
